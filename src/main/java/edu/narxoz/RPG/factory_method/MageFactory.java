@@ -5,8 +5,7 @@ import edu.narxoz.RPG.characters.Mage;
 
 public class MageFactory extends CharacterFactory {
 
-    @Override
-    public Character createCharacter() {
+    protected Character createCharacter() {
         return new Mage();
     }
 }

@@ -5,8 +5,7 @@ import edu.narxoz.RPG.characters.Warrior;
 
 public class WarriorFactory extends CharacterFactory {
 
-    @Override
-    public Character createCharacter() {
+    protected Character createCharacter() {
         return new Warrior();
     }
 }
