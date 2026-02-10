@@ -13,7 +13,6 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        // === Выбор персонажа (Factory Method)
         System.out.println("Choose character: 1-Warrior, 2-Mage, 3-Archer");
         int c = sc.nextInt();
 
@@ -25,7 +24,6 @@ public class Main {
 
         Character character = characterFactory.create();
 
-        // === Выбор экипировки (Abstract Factory)
         System.out.println("Choose equipment: 1-Medieval, 2-Magic, 3-Ranger");
         int e = sc.nextInt();
 
@@ -40,7 +38,6 @@ public class Main {
                 equipmentFactory.createArmor()
         );
 
-        // === Результат
         character.showInfo();
     }
 }
